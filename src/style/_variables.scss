@@ -1,0 +1,42 @@
+$text-color-1: #222;
+$text-color-2: #fcba03;
+$text-color-3: #fff;
+$text-color-1-hover: #fff;
+$text-color-2-hover: #222;
+$text-color-3-hover: #fcba03;
+$title-color-1: #222;
+$title-color-2: #fff;
+$bg-color-1: #222;
+$bg-color-2: #fff;
+$border-color-1: #222222;
+$border-color-2: #fcba03;
+$border-color-3: #e6e3e3;
+$button-bg-color-1: #222;
+$icons-color: #fff;
+$message-text-color: #004085;
+$message-background-color: #cce5ff;
+$message-border-color: #b8daff;
+$message-error-color: #ff0000;
+
+:root {
+
+  --text-color-1: #{$text-color-1};
+  --text-color-2: #{$text-color-2};
+  --text-color-3: #{$text-color-3};
+  --text-color-1-hover: #{$text-color-1-hover};
+  --text-color-2-hover: #{$text-color-2-hover};
+  --text-color-3-hover: #{$text-color-3-hover};
+  --title-color-1: #{$title-color-1};
+  --title-color-2: #{($title-color-2)};
+  --bg-color-1: #{$bg-color-1};
+  --border-color-1: #{$bg-color-1};
+  --border-color-2: #{$border-color-2};
+  --border-color-3: #{$border-color-3};
+  --button-bg-color-1: #{$button-bg-color-1};
+  --icons-color: #{$icons-color};
+  --message-text-color: #{$message-text-color};
+  --message-background-color: #{$message-background-color};
+  --message-border-color: #{$message-border-color};
+  --message-error-color: #{$message-error-color};
+
+}
