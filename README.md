@@ -2,12 +2,12 @@
 
 This is a project developed in Vue JS - with **API Composition*** - using Rest Json-Server APIs, hosted on the HEROKU platform. Consuming data with Vuex and Axios authentication. Crud with create, read, update and delete request functionality. SASS-style web application.
 
-***API Composition** - If we compare the application structures of both, we will definitely notice that the Composition API provides **simpler, cleaner, and more readable** code for the application structure. With the Options API, there are things such as the lifecycle hooks that can make the code less readable.
+***API Composition** - If we compare the application structures of API Composition and Options API, we will definitely notice that the Composition API provides **simpler, cleaner, and more readable** code for the application structure. With the Options API, there are things such as the lifecycle hooks that can make the code less readable.
 
 ## Project Preview: 
-**https://make-your-wish.vercel.app/**
+**https://app-make-your-wish.vercel.app/**
 
-[![img_make-your-wish](https://github.com/renatamoss/make_your-wish/blob/main/public/make_your_wish.gif?raw=true)](https://make-your-wish.vercel.app/)
+[![img_app_make-your-wish](https://github.com/renatamoss/app_make_your_wish/blob/main/public/make_your_wish.gif)](https://app-make-your-wish.vercel.app/)
 
 ## API Implemented end-points:
 
