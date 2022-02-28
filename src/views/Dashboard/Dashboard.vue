@@ -107,8 +107,8 @@ const message_server_error = ref(null);
 async function getPedidos() {
   try {
     const req = await fetch(
-      // "https://api-data-make-your-wish.herokuapp.com/pedidos"
-      "http://localhost:3000/pedidos"
+      "https://api-data-make-your-wish.herokuapp.com/pedidos"
+      // "http://localhost:3000/pedidos"
     );
     const data = await req.json();
     pedidos.value = data;
@@ -137,8 +137,8 @@ async function getPedidos() {
 async function getStatus() {
   try {
     const req = await fetch(
-      // "https://api-data-make-your-wish.herokuapp.com/status"
-      "http://localhost:3000/status"
+      "https://api-data-make-your-wish.herokuapp.com/status"
+      // "http://localhost:3000/status"
     );
     const data = await req.json();
     status.value = data;
@@ -152,8 +152,8 @@ async function getStatus() {
 async function deletePedido(id) {
   try {
     const req = await fetch(
-      // `https://api-data-make-your-wish.herokuapp.com/pedidos/${id}`,
-      `http://localhost:3000/pedidos/${id}`,
+      `https://api-data-make-your-wish.herokuapp.com/pedidos/${id}`,
+      // `http://localhost:3000/pedidos/${id}`,
       {
         method: "DELETE",
       }
@@ -179,8 +179,8 @@ async function updatePedido(event, id) {
     const option = event.target.value;
     const dataJson = JSON.stringify({ status: option });
     const req = await fetch(
-      // `https://api-data-make-your-wish.herokuapp.com/pedidos/${id}`,
-      `http://localhost:3000/pedidos/${id}`,
+      `https://api-data-make-your-wish.herokuapp.com/pedidos/${id}`,
+      // `http://localhost:3000/pedidos/${id}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },

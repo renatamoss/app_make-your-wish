@@ -262,8 +262,8 @@ async function getPedidos() {
   //trazendo os dados da api, transformando em json:
   try {
     const req = await fetch(
-      // "https://api-data-make-your-wish.herokuapp.com/produtos"
-      "http://localhost:3000/produtos"
+      "https://api-data-make-your-wish.herokuapp.com/produtos"
+      // "http://localhost:3000/produtos"
     );
 
     const data = await req.json();
@@ -312,8 +312,8 @@ async function createWish() {
 
     //fazendo a requisição, INSERINDO os dados no servidor: POST:
     const req = await fetch(
-      // "https://api-data-make-your-wish.herokuapp.com/pedidos",
-      "http://localhost:3000/pedidos",
+      "https://api-data-make-your-wish.herokuapp.com/pedidos",
+      // "http://localhost:3000/pedidos",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
