@@ -18,6 +18,7 @@ This is a project developed in Vue JS - with **API Composition*** - using Rest J
 * JSON-Server;
 * NPM;
 * Vue CLI;
+* API Composition;
 * Vue Router;
 * Vuex;
 * Axios;
