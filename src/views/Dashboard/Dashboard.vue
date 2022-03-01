@@ -5,13 +5,20 @@
       :messageBox="message_remove_wish"
       v-show="message_remove_wish"
     />
+
     <MessageBox
       v-if="pedidos"
       :messageBox="message_update_wish"
       v-show="message_update_wish"
     />
+    
+    <MessageBox
+      v-if="pedidos"
+      :messageBox="message_not_wish"
+      v-show="message_not_wish"
+    />
 
-    <div class="dashboard" v-if="pedidos" v-show="pedidos">
+    <div class="dashboard">
       <div class="dashboard___box" v-for="pedido in pedidos" :key="pedido.id">
         <div class="box__head">
           <p>PEDIDO Nº: 000{{ pedido.id }} - Data: {{ date }}</p>
@@ -78,7 +85,7 @@
       </div>
     </div>
 
-    <div v-else v-show="message_server_error">
+    <div v-show="message_server_error">
       <ErrorServidorContent
         message_server_error="Sistema indisponível no momento, tente novamente mais tarde."
       />
@@ -96,11 +103,12 @@ import { ref } from "vue";
 import { onBeforeMount } from "@vue/runtime-core";
 
 const pedido_id = ref(null);
-const pedidos = ref(true);
+const pedidos = ref(null);
 const status = ref([]);
 const date = ref(null);
 const message_remove_wish = ref(null);
 const message_update_wish = ref(null);
+const message_not_wish = ref(null)
 const message_server_error = ref(null);
 
 //Resposta do banco com inserção do dados:
@@ -114,7 +122,7 @@ async function getPedidos() {
     pedidos.value = data;
 
     if (data == false) {
-      msg_pedido.value = "Não há pedidos em aberto no momento.";
+      message_not_wish.value = "Não há pedidos em aberto no momento.";
     }
 
     //Date
@@ -127,7 +135,6 @@ async function getPedidos() {
 
     getStatus();
   } catch (err) {
-    pedidos.value = false;
     message_server_error.value = true;
     console.log(`Deu erro no acesso ao servidor` + err);
   }

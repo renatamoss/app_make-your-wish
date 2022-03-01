@@ -35,6 +35,7 @@ const route = useRoute();
   &__content {
     font-size: 1rem;
     margin: 1rem auto;
+    min-height: 26rem;
   }
 
   &__content-box {
