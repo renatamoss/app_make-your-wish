@@ -5,16 +5,9 @@
 </template>
 
 
-<script>
+<script setup>
 import AppHeader from "./components/templates/AppHeader";
 import AppFooter from "./components/templates/AppFooter";
-
-export default {
-  components: {
-    AppHeader,
-    AppFooter,
-  },
-};
 </script>
 
 

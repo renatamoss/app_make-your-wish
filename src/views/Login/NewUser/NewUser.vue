@@ -61,6 +61,7 @@
   </AppContent>
 </template>
 
+
 <script setup>
 import AppContent from "@/components/templates/AppContent";
 import Button from "@/components/shared/Button";

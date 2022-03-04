@@ -147,6 +147,7 @@
   </AppContent>
 </template>
 
+
 <script setup>
 import AppContent from "@/components/templates/AppContent";
 import MessageBox from "@/components/shared/MessageBox";

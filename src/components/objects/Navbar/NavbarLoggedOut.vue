@@ -11,9 +11,9 @@
     </div>
 </template>
 
+
 <script setup>
 import Icon from "@/components/shared/Icon";
-
 </script>
 
 
